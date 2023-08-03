@@ -1,0 +1,430 @@
+<div class="container-fluid font">
+    <div class="row  d-flex justify-content-center">
+        <div class="col-md-10">
+            <div class="row mx-auto">
+                <div class="col-md-12">
+
+
+                    <h2 class="text-center mx-5 my-5 text-white">IL TUO CARRELLO</h2>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-5 text-center">
+
+                                <h4>ARTICOLO</h4>
+                            </div>
+                            <div class="col-md-1 text-center">
+                                <h4>Q</h4>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <h4> PREZZO-UNITARIO</h4>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <h4> SUBTOTALE</h4>
+                            </div>
+                            <div class="col-md-1 text-center">
+                                <h4> SVUOTA</h4>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <div class="row" *ngFor="let ordine of carello; let i = index">
+                            <div class="col-md-2">
+
+                                <img [src]="ordine.img" class="img-thumbnail">
+                            </div>
+                            <div class="col-md-3 ">
+                                <h4> {{ ordine.nome }} {{ ordine.id}}</h4>
+                                <p> Disponibile</p>
+                                <p>idoneo alla spedizione gratuita</p>
+                                <input type="checkbox" class="form-check-input">
+                                <span>Includi confeszione regalo</span> <br>
+
+                            </div>
+                            <div class="col-md-1 text-center d-flex justify-content-center align-items-center">
+
+                                <input min="1" [(ngModel)]="ordine.quantita" 
+                             name="quantity" type="number" class="w-75" (ngModelChange)="updateSubtotal()">                            </div>
+                            <div class="col-md-2 d-flex justify-content-center  align-items-center">
+                                <h4>{{ ordine.prezzo }}</h4>
+                            </div>
+                            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                                <h4>{{ ordine.prezzo * ordine.quantita }}€</h4>                            </div>
+                            <div class="col-md-1 d-flex justify-content-center align-items-center">
+                                <button class="btn btn-primary" (click)="eliminaOrdine(ordine)">
+                                    <fa-icon [icon]="fatrashcan"></fa-icon>
+                                   Elimina
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-5 text-center">
+
+                                <h4>ARTICOLO</h4>
+                            </div>
+                            <div class="col-md-1 text-center">
+                                <h4>Q</h4>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <h4> PREZZO-UNITARIO</h4>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <h4> SUBTOTALE</h4>
+                            </div>
+                            <div class="col-md-1 text-center">
+                                <h4> SVUOTA</h4>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="../../../assets/images/1mulinello_abu_garcia_revo_ike_mike_iaconelli_1_1920x1920.png"
+                                    class="img-thumbnail" alt="...">
+                            </div>
+                            <div class="col-md-3 ">
+                                <h4> Abu Garcia REVO IKE 20 (Mike Iaconelli)</h4>
+                                <p>Disponibilità immediata</p>
+                                <p>idoneo alla spedizione gratuita</p>
+                                <input type="checkbox" class="form-check-input">
+                                <span>Includi confeszione regalo</span> <br>
+
+                            </div>
+                            <div class="col-md-1 text-center d-flex justify-content-center align-items-center">
+                                <input type="number" class="animazione" name="Quantità" style="width: 80%;" placeholder="1" min="0"
+                                    step="any">
+                            </div>
+                            <div class="col-md-2 d-flex justify-content-center  align-items-center">
+                                <h4>190.90€</h4>
+                            </div>
+                            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                                <h4>190.90€</h4>
+                            </div>
+                            <div class="col-md-1 d-flex justify-content-center align-items-center">
+                                <button class="btn btn-primary">
+                                    <fa-icon [icon]="fatrashcan"></fa-icon>
+                                    Svuota cestino
+                                  </button>
+                                  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <hr>
+                        <div class="row mt-5">
+                            <div class="col-md-2">
+                                <img src="../../../assets/images/artificiali.png" class="img-thumbnail" alt="...">
+                            </div>
+                            <div class="col-md-3 ">
+                                <h4>Savage Gear Slider</h4>
+                                <p>Disponibilità immediata</p>
+                                <p>idoneo alla spedizione gratuita</p>
+                                <input type="checkbox" class="form-check-input">
+                                <span>Includi confeszione regalo</span> <br>
+
+                            </div>
+                            <div class="col-md-1 text-center d-flex justify-content-center align-items-center">
+                                <input type="number" name="Quantità" style="width:80%;" placeholder="2" min="0"
+                                    step="any">
+                            </div>
+                            <div class="col-md-2 d-flex justify-content-center  align-items-center">
+                                <h4>18.50€</h4>
+                            </div>
+                            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                                <h4>37.00€</h4>
+                            </div>
+                            <div class="col-md-1 d-flex justify-content-center align-items-center">
+                                <button class="btn btn-primary">
+                                    <fa-icon [icon]="fatrashcan"></fa-icon>
+                                    Svuota cestino
+                                  </button>                            </div>
+                        </div>
+                    </div>
+                -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-hr></app-hr>
+
+<div class="container-fluid py-5 font">
+    <div class="row align-items-center justify-content-center">
+        <div class="col-4 text-center">
+            <h2 class="text-white">RESOCONTO</h2>
+            <table class="table table-stripped table-bordered">
+                <tbody>
+                    <tr>
+                        <td> Costi di spedizione</td>
+                        <td>{{ costiSpedizione }}€</td>
+                    </tr>
+                    <tr>
+                        <td>Somma totale senza IVA</td>
+                        <td>{{ sommaTotaleSenzaIva }}€</td>
+                    </tr>
+                    <tr>
+                        <td>più 22 % IVA</td>
+                        <td>{{ iva }}€</td>
+                    </tr>
+                    <tr>
+                        <td>Subtotale</td>
+                        <td>{{ subtotale }}€</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a routerLink="/checkout" class="btn btn-primary">PROCEDI CON L'ACQUISTO</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<app-hr></app-hr>
+<div class="container-fluid font">
+    <div class="row font">
+        <div class="col-md-12 text-center">
+            <h2 class="text-white" >ACQUISTI CONSIGLIATI</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-11">
+            <hr>
+        </div>
+        <div class="col-md-1">
+            <a href="riepilogoordini.html">More</a>
+        </div>
+
+        <div id="carouselExample" class="carousel slide">
+
+            <div class="carousel-indicators">
+
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active bg-white"
+                    aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" class="bg-white"
+                    aria-label="Slide 2"></button>
+
+            </div>
+
+
+
+            <div class="carousel-inner container px-4 py-5">
+
+
+
+                <div class="carousel-item active   ">
+
+                    <div class="row">
+
+                        <div
+                            class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex flex-column align-items-center justify-content-center product-item">
+
+                            <div class="product-car">
+
+                                <div class="product-image">
+
+                                    <img src="assets/images/mulgiallo.png" class="w-100 img-thumbnail"
+                                        alt="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div
+                            class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex flex-column align-items-center justify-content-center product-item">
+
+                            <div class="product-car">
+
+                                <div class="product-image">
+
+                                    <img src="assets/images/trabucco-filo-xps-surf-cast-025-300m.jpg" class="w-100 img-thumbnail"
+                                        alt="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div
+                            class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex flex-column align-items-center justify-content-center product-item">
+
+                            <div class="product-car">
+
+                                <div class="product-image">
+
+                                    <img src="assets/images/bellyboatsavagegear.jpg" class="w-100 img-thumbnail"
+                                        alt="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div
+                            class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex flex-column align-items-center justify-content-center product-item">
+
+                            <div class="product-car">
+
+                                <div class="product-image">
+
+                                    <img src="assets/images/oro.jpg" class="w-100 img-thumbnail"
+                                        alt="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                
+
+                </div>
+
+
+
+                <div class="carousel-item">
+
+                    <div class="row">
+
+                        <div
+                            class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex flex-column align-items-center justify-content-center product-item">
+
+                            <div class="product-car">
+
+                                <div class="product-image">
+
+                                    <img src="assets/images/akami-scatola-porta-accessori-pb-21.jpg" class="w-100 img-thumbnail"
+                                        alt="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div
+                            class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex flex-column align-items-center justify-content-center product-item">
+
+                            <div class="product-car">
+
+                                <div class="product-image">
+
+                                    <img src="assets/images/trecciato.png" class="w-100 img-thumbnail"
+                                        alt="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <div
+                            class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex flex-column align-items-center justify-content-center product-item">
+
+                            <div class="product-car">
+
+                                <div class="product-image">
+
+                                    <img src="assets/images/mulinellotraina.jpg" class="w-100 img-thumbnail"
+                                        alt="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex flex-column align-items-center justify-content-center product-item">
+
+                            <div class="product-car">
+
+                                <div class="product-image">
+
+                                    <img src="/assets/images/muta.png" class="w-100 img-thumbnail"
+                                        alt="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex flex-column align-items-center justify-content-center product-item">
+
+                            <div class="product-car">
+
+                                <div class="product-image">
+
+                                    <img src="assets/images/assets/images/artificiali.png" class="w-100 img-thumbnail"
+                                        alt="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <button class="carousel-control-prev fa-xl fa-rotate-180" type="button"
+                    data-bs-target="#carouselExample" data-bs-slide="prev"><fa-icon class="text-black"
+                        [icon]="faArrowRight"></fa-icon>
+
+                </button>
+
+
+
+                <button class="carousel-control-next fa-xl" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next"><fa-icon class="text-black" [icon]="faArrowRight"></fa-icon>
+
+                </button>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row font py-5">
+    <div class="col-md-12 d-flex justify-content-center">
+        <div class="zoombanner">
+            <a href="https://www.duotonesports.com/">
+                <img src="../../../assets/images/banner.PNG" class="img-fluid w-100" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+<app-hr></app-hr>

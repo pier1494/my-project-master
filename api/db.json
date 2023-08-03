@@ -1,0 +1,453 @@
+{
+  "categoria": [
+    {
+      "nome": "SURFCASTING",
+      "prodotti": [
+        {
+          "nome": "Mulinello Abu Garcia Revo IKE",
+          "codice": "01",
+          "prezzo": "190€",
+          "img": "assets/images/Mulinello Abu Garcia Revo IKE (Mike Iaconelli).png"
+        },
+        {
+          "nome": "trabucco filo xps surf cast 025 300m",
+          "codice": "02",
+          "prezzo": "22.5€",
+          "img": "assets/images/trabucco-filo-xps-surf-cast-025-300m.jpg"
+        },
+        {
+          "nome": "lineaeffe superior cast",
+          "codice": "03",
+          "prezzo": "95.9€",
+          "img": "assets/images/lineaeffe-superior-cast.jpg"
+        },
+        {
+          "nome": "Trabucco XTR Finger Protector",
+          "codice": "04",
+          "prezzo": "65€",
+          "img": "assets/images/Trabucco-XTR-Surf-Team-Finger-Protector.png"
+        },
+        {
+          "nome": "abu garcia salty stage free concept",
+          "codice": "5",
+          "prezzo": "150€",
+          "img": "assets/images/abu-garcia-salty-stage-concept-free-2.png"
+        },
+        {
+          "nome": "Borsa Shimano All Round Tackle",
+          "codice": "5",
+          "prezzo": "40€",
+          "img": "assets/images/-borsa-pesca-3_1.jpg"
+        }
+      ],
+      "sottocategorie": [
+        {
+          "nome": "Mulinelli",
+          "prodotti": [
+            {
+              "nome": "Abu Garcia Revo Ike",
+              "codice": "01",
+              "prezzo": "190,90€"
+            },
+            {
+              "nome": "Shimano Stradic C4",
+              "codice": "02",
+              "prezzo": "200€"
+            },
+            {
+              "nome": "Daiwa Ballistic LT",
+              "codice": "3",
+              "prezzo": "250€"
+            },
+            {
+              "nome": "Abu Garcia Revo Sx",
+              "codice": "4",
+              "prezzo": "180€"
+            }
+          ]
+        },
+        {
+          "nome": "Canne Da Pesca",
+          "prodotti": []
+        },
+        {
+          "nome": "Ami e Lenze",
+          "prodotti": []
+        },
+        {
+          "nome": "Accessori e Abbigliamento",
+          "prodotti": []
+        }
+      ]
+    },
+    {
+      "id": "SPINNING",
+      "nome": "SPINNING",
+      "prodotti": [
+        {
+          "nome": "Savage Gear king slider",
+          "codice": "01",
+          "prezzo": "18.5",
+          "img": "assets/images/5069.jpg"
+        },
+        {
+          "nome": "savage gear gold jig",
+          "codice": "01",
+          "prezzo": "190€",
+          "img": "assets/images/oro.jpg"
+        },
+        {
+          "nome": "Mulinello Maver darkside 10000 FRONT DRAG",
+          "codice": "01",
+          "prezzo": "190€",
+          "img": "assets/images/71-6PzmkYLL._AC_UL600_SR600,600_.jpg"
+        },
+        {
+          "nome": "Dingbear 1093Yd/1000m 135LB/0.60mm",
+          "codice": "01",
+          "prezzo": "30€",
+          "img": "assets/images/trecciato.png"
+        },
+        {
+          "nome": "Zodias 268ML 2 Spinning",
+          "codice": "01",
+          "prezzo": "165",
+          "img": "assets/images/Zodias268ML-2-Spinning.png"
+        },
+        {
+          "nome": "akami scatola porta accessori pb 21",
+          "codice": "01",
+          "prezzo": "190€",
+          "img": "assets/images/akami-scatola-porta-accessori-pb-21.jpg"
+        }
+      ],
+      "sottocategorie": [
+        {
+          "nome": "Mulinelli",
+          "prodotti": [
+            {
+              "nome": "Abu Garcia Revo Ike",
+              "codice": "01",
+              "prezzo": "190,90€"
+            },
+            {
+              "nome": "Shimano Stradic C4",
+              "codice": "02",
+              "prezzo": "200€"
+            },
+            {
+              "nome": "Daiwa Ballistic LT",
+              "codice": "3",
+              "prezzo": "250€"
+            },
+            {
+              "nome": "Abu Garcia Revo Sx",
+              "codice": "4",
+              "prezzo": "180€"
+            }
+          ]
+        },
+        {
+          "nome": "Canne Da Pesca",
+          "prodotti": []
+        },
+        {
+          "nome": "Ami e Lenze",
+          "prodotti": []
+        },
+        {
+          "nome": "Accessori e Abbigliamento",
+          "prodotti": []
+        }
+      ]
+    },
+    {
+      "nome": "BOLOGNESE",
+      "prodotti": [],
+      "sottocategorie": [
+        {
+          "nome": "Mulinelli",
+          "prodotti": [
+            {
+              "nome": "Abu Garcia Revo Ike",
+              "codice": "01",
+              "prezzo": "190,90€"
+            },
+            {
+              "nome": "Shimano Stradic C4",
+              "codice": "02",
+              "prezzo": "200€"
+            },
+            {
+              "nome": "Daiwa Ballistic LT",
+              "codice": "3",
+              "prezzo": "250€"
+            },
+            {
+              "nome": "Abu Garcia Revo Sx",
+              "codice": "4",
+              "prezzo": "180€"
+            }
+          ]
+        },
+        {
+          "nome": "Canne Da Pesca",
+          "prodotti": []
+        },
+        {
+          "nome": "Ami e Lenze",
+          "prodotti": []
+        },
+        {
+          "nome": "Accessori e Abbigliamento",
+          "prodotti": []
+        }
+      ]
+    },
+    {
+      "id": "SUBACQUEA",
+      "nome": "SUBACQUEA",
+      "prodotti": [],
+      "sottocategorie": [
+        {
+          "nome": "Mulinelli",
+          "prodotti": [
+            {
+              "nome": "Abu Garcia Revo Ike",
+              "codice": "01",
+              "prezzo": "190,90€"
+            },
+            {
+              "nome": "Shimano Stradic C4",
+              "codice": "02",
+              "prezzo": "200€"
+            },
+            {
+              "nome": "Daiwa Ballistic LT",
+              "codice": "3",
+              "prezzo": "250€"
+            },
+            {
+              "nome": "Abu Garcia Revo Sx",
+              "codice": "4",
+              "prezzo": "180€"
+            }
+          ]
+        },
+        {
+          "nome": "Canne Da Pesca",
+          "prodotti": []
+        },
+        {
+          "nome": "Ami e Lenze",
+          "prodotti": []
+        },
+        {
+          "nome": "Accessori e Abbigliamento",
+          "prodotti": []
+        }
+      ]
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "sottocategoria": "Mulinelli",
+      "nome": "Abu Garcia Revo Ike",
+      "codice": "1",
+      "prezzo": "190,90€",
+      "videoUrl": "https://www.youtube.com/embed/ZgD2_yG7jUM",
+      "othersImgs": [
+        "assets/images/1mulinello_abu_garcia_revo_ike_mike_iaconelli_1_1920x1920.png",
+        "assets/images/2mulinello_abu_garcia_revo_ike_mike_iaconelli_2_1920x1920.png",
+        "assets/images/3mulinello_abu_garcia_revo_ike_mike_iaconelli_3_1920x1920.png"
+      ],
+      "modelli": [
+        {
+          "nome": "Abu Garcia Revo Ike",
+          "img": "assets/images/1mulinello_abu_garcia_revo_ike_mike_iaconelli_1_1920x1920.png",
+          "prezzo": 190.9,
+          "prezzoOriginale": 209.9,
+          "caratteristiche": [
+            "Cuscinetti: 9+1 rulli",
+            "Rapporto: 6.2:1",
+            "Capacità: 0.25 mm / 110 m",
+            "MaxDrag: 5.2 kg",
+            "Peso: 194 gr",
+            "Rapporto: 6.2:1",
+            "Modello: REVO2IKESP20",
+            "Codice: BGR109"
+          ]
+        },
+        {
+          "nome": "Abu Garcia Revo Ike S",
+          "img": "assets/images/2mulinello_abu_garcia_revo_ike_mike_iaconelli_2_1920x1920.png",
+          "prezzo": 180.9,
+          "prezzoOriginale": 220.9,
+          "caratteristiche": [
+            "Cuscinetti: 9+1 rulli",
+            "Rapporto: 6.2:1",
+            "Capacità: 0.25 mm / 110 m",
+            "MaxDrag: 5.2 kg",
+            "Peso: 204 gr",
+            "Rapporto: 6.2:1",
+            "Modello: REVO2IKESP20",
+            "Codice: BGR109"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "img": "assets/images/mulgiallo.png",
+      "nome": "MULINELLO NOMURA SUMO",
+      "codice": "2",
+      "prezzo": "100",
+      "caratteristiche": [
+        "Cuscinetti: 9+1 rulli",
+        "Rapporto: 6.2:1",
+        "Capacità: 0.25 mm / 110 m",
+        "MaxDrag: 5.2 kg",
+        "Peso: 204 gr",
+        "Rapporto: 6.2:1",
+        "Modello: REVO2IKESP20",
+        "Codice: BGR109"
+      ],
+      "othersImgs": [
+        "assets/images/mulgiallo1.png",
+        "assets/images/mulgiallo2.png"
+      ]
+    },
+    {
+      "id": 3,
+      "img": "assets/images/DAIWA-TANACOM-1000E.jpg",
+      "nome": "Daiwa Ballistic LT",
+      "codice": "3",
+      "prezzo": "250€"
+    }
+  ],
+  "login": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+  },
+  "users": [
+    {
+      "id": "gppdtkZ",
+      "nome": "thomas",
+      "cognome": "cola",
+      "email": "tommy@boy.it",
+      "password": "tommy"
+    },
+    {
+      "id": "GwLp3EE",
+      "nome": "pier",
+      "cognome": "musa",
+      "email": "pier@musa.it",
+      "password": "pier"
+    },
+    {
+      "id": "YL5Kn_c",
+      "nome": "pier",
+      "cognome": "musa",
+      "email": "pier@musa.it",
+      "password": "pier"
+    },
+    {
+      "id": "07yMihG",
+      "nome": "francesco",
+      "cognome": "corvino",
+      "email": "francesco@corvino.it",
+      "password": "paperino"
+    },
+    {
+      "id": "7x3JtXq",
+      "nome": "",
+      "cognome": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "MJjz0u9",
+      "nome": "",
+      "cognome": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "H4HkL1z",
+      "nome": "",
+      "cognome": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "4WKEfNJ",
+      "nome": "",
+      "cognome": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "i5xh6t6",
+      "nome": "",
+      "cognome": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "Vi1gPVy",
+      "nome": "",
+      "cognome": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "9EWkZzd",
+      "nome": "d",
+      "cognome": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "HMpJoN2",
+      "nome": "d",
+      "cognome": "ddd",
+      "email": "ddddd",
+      "password": ""
+    },
+    {
+      "id": "csGY0NU",
+      "nome": "",
+      "cognome": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "zYBFZ-p",
+      "nome": "",
+      "cognome": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "FtEn74D",
+      "nome": "",
+      "cognome": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "NK1K_aN",
+      "nome": "",
+      "cognome": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "AcRrIM7",
+      "nome": "angelica",
+      "cognome": "angi",
+      "email": "angelica@angi",
+      "password": "angi"
+    }
+  ]
+}

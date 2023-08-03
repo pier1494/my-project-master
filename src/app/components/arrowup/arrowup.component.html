@@ -1,0 +1,11 @@
+<!-- <a routerLink="#">
+  <button class="btn animazione-primaria back-to-top"><i class="bi bi-arrow-up-circle"></i></button>
+</a> -->
+
+<!-- <div class="fixed">
+  <button *ngIf="showButton" (click)="topFunction" type="button" class="arrow-up">
+    <img class="logo-scroll" src="assets/images/logo_piccolo-removebg-preview.png">
+  </button>
+</div> -->
+<ng-content></ng-content>
+<button *ngIf="showButton" class="animazione-primaria" (click)="topFunction()" id="myBtn" title="Go to top" ><fa-icon [icon]="faarrowUp" class="fa-xl "></fa-icon></button>

@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import 'scss/variables';
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+  @import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Source+Sans+3:wght@200;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,100;1,200;1,300;1,400;1,600&family=Borel&display=swap');
+html,
+body {
+    height: 100%;
+
+}
+
+.container {
+    min-height: 100%;
+    position: relative;
+}
+
+.custom-facebook {
+    color: #3c2eff;
+    font-size: 2em;
+  }
+
+  .custom-instagram{
+    color: #ff3d3d; 
+    font-size: 2em;
+  }
+    .custom-whats{
+      color: #198d02; 
+        font-size: 2em;
+  }
+.custom-paypal{
+  color: #ffff; 
+  font-size: 2em;
+}
+.custom-twit{
+  color: #4e87cc; 
+  font-size: 2em;
+
+}
+
+.icon {
+  transition: opacity 0.5 ease-in-out;
+  transition: transform 0.10s;
+
+}
+
+.icon:hover {
+  opacity: 0.7; /* Riduce l'opacità dell'icona al 70% */
+
+}
+
+.font{
+  font-family: Barlow;
+}
+
+#h2{
+  color:#ffff;
+}

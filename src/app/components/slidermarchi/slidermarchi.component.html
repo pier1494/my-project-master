@@ -1,0 +1,135 @@
+
+
+<div class="navigation-wrapper">
+
+    <div class="keen-slider" #sliderRef>
+  
+      <div class="keen-slider__slide number-slide1"><img src="../../../assets/images/molix.png"> </div>
+  
+      <div class="keen-slider__slide number-slide2"><img src="../../../assets/images/molix.png"></div>
+  
+      <div class="keen-slider__slide number-slide3"><img src="../../../assets/images/molix.png"></div>
+  
+      <div class="keen-slider__slide number-slide4"><img src="../../../assets/images/molix.png"></div>
+  
+      <div class="keen-slider__slide number-slide5"><img src="../../../assets/images/molix.png"></div>
+  
+      <div class="keen-slider__slide number-slide6"><img src="../../../assets/images/molix.png"></div>
+  
+    </div>
+  
+    <svg [ngClass]="
+  
+        'arrow arrow--left ' + (currentSlide === 0 ? 'arrow--disabled' : '')
+  
+      " (click)="slider?.prev()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  
+      <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+  
+    </svg>
+  
+    <svg *ngIf="slider" [ngClass]="
+  
+        'arrow arrow--right ' +
+  
+        (slider.track.details.slides.length - 1 === currentSlide
+  
+          ? 'arrow--disabled'
+  
+          : '')
+  
+      " (click)="slider.next()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  
+      <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+  
+    </svg>
+  
+  </div>
+  
+  <div class="dots" *ngIf="false">
+  
+    <button (click)="slider?.moveToIdx(i)" *ngFor="let slide of dotHelper; let i = index"
+  
+      [class]="'dot ' + (i === currentSlide ? 'active' : '')"></button>
+  
+  </div>
+
+
+
+
+
+
+<!-- <div id="carouselExample" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active bg-dark"
+            aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" class="bg-dark"
+            aria-label="Slide 2"></button>
+
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" class="bg-dark"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="pages/pagina_prodotto.html">
+                                <img class="pic-1" src="../../../assets/images/varivas-logo.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="pages/pagina_prodotto.html">
+                                <img class="pic-1" src="../../../assets/images/varivas-logo.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="pages/pagina_prodotto.html">
+                                <img class="pic-1" src="../../../assets/images/varivas-logo.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="pages/pagina_prodotto.html">
+                                <img class="pic-1" src="../../../assets/images/varivas-logo.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="pages/pagina_prodotto.html">
+                                <img class="pic-1"
+                                    src="../../../assets/images/abu-garcia-salty-stage-concept-free-1.png">
+                            </a>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="pages/pagina_prodotto.html">
+                                            <img class="pic-1" src="../../../assets/images/muta-seac.png">
+
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

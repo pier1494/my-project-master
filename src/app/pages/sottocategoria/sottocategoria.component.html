@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            <app-aside></app-aside>
+        </div>
+        <div class="col-md-8 d-flex justify-content-around flex-wrap">
+
+            <div class="product-grid my-3" *ngFor="let prodotto of prodottiFiltrati" style="width: 18rem;">
+                <div class="product-image zoombanner"> 
+                    <a routerLink="/products">
+                        <img class="pic-1" [src]="prodotto.img">
+                    </a>
+                    
+                </div>
+                <h6> {{ prodotto.nome }}</h6>
+                <!-- <div class="my-2 d-flex justify-content-center align-items-start">
+                    <ul class="rating">
+                        <li> <fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
+                        <li><fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
+                        <li><fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
+                        <li><fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
+                        <li><fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
+                    </ul>
+                </div> -->
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Mulinelli</a></h3>
+                    <div class="price">{{prodotto.prezzo}}
+                        <span>220</span>
+                    </div>
+                    <!-- <a class="add-to-cart"  (click)="aggiungiAlCarrello()">+ Aggiungi al carrello</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+  
+  

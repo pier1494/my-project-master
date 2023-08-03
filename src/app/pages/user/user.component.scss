@@ -1,0 +1,22 @@
+.alert {
+    overflow: hidden; /* Nasconde il contenuto in eccesso */
+    position: relative; /* Assicura che l'elemento posizionato all'interno sia relativo a questo div */
+    padding: 20px; /* Rimuove il padding interno per evitare spazi vuoti */
+  }
+  
+  .scroller {
+    display: inline-block; /* Impedisce al contenuto di andare a capo */
+    white-space: nowrap; /* Evita che il testo vada a capo */
+    animation: scrollText 10s linear infinite; /* Applica l'animazione */
+    font-size: 18px;
+}
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%); /* Inizia con il testo spostato a destra di 100% */
+    }
+    100% {
+      transform: translateX(-100%); /* Finisce con il testo spostato a sinistra di 100% */
+    }
+  }
+  

@@ -1,0 +1,158 @@
+{
+  "categorie": [
+    {
+      "nome": "SurfCusting",
+      "prodotti": [
+        {
+          "nome": "Mulinello Abu Garcia Revo IKE (Mike Iaconelli)",
+          "codice": "01",
+          "prezzo": "190€"
+        },
+        {
+          "nome": "Savage Gear Slide",
+          "codice": "02",
+          "prezzo": "22.5€"
+        },
+        {
+          "nome": "Dawa-Tanacom-1000E",
+          "codice": "03",
+          "prezzo": "150€"
+        },
+        {
+          "nome": "Okuma Scorpio 1000S",
+          "codice": "04",
+          "prezzo": "65€"
+        },
+        {
+          "nome": "Seaspin Ketc Gold",
+          "codice": "5",
+          "prezzo": "15€"
+        }
+      ],
+      "sottoCategorie": [
+        {
+          "nome": "Mulinelli",
+          "prodotti": [
+            {
+              "nome": "Abu Garcia Revo Ike",
+              "codice": "01",
+              "prezzo": "190,90€"
+            },
+            {
+              "nome": "Shimano Stradic C4",
+              "codice": "02",
+              "prezzo": "200€"
+            },
+            {
+              "nome": "Daiwa Ballistic LT",
+              "codice": "3",
+              "prezzo": "250€"
+            },
+            {
+              "nome": "Abu Garcia Revo Sx",
+              "codice": "4",
+              "prezzo": "180€"
+            }
+          ]
+        },
+        {
+          "nome": "Canne Da Pesca",
+          "prodotti": []
+        },
+        {
+          "nome": "Ami e Lenze",
+          "prodotti": []
+        },
+        {
+          "nome": "Accessori e Abbigliamento",
+          "prodotti": []
+        }
+      ]
+    },
+    {
+      "nome": "Spinning",
+      "prodotti": []
+    },
+    {
+      "nome": "Bolognese",
+      "prodotti": []
+    },
+    {
+      "nome": "Subacquea",
+      "prodotti": []
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "nome": "Abu Garcia Revo Ike",
+      "codice": "1",
+      "prezzo": "190,90€",
+      "othersImgs": [
+        "assets/images/1mulinello_abu_garcia_revo_ike_mike_iaconelli_1_1920x1920.png",
+        "assets/images/2mulinello_abu_garcia_revo_ike_mike_iaconelli_2_1920x1920.png",
+        "assets/images/3mulinello_abu_garcia_revo_ike_mike_iaconelli_3_1920x1920.png"
+      ],
+      "modelli": [
+        {
+          "img": "assets/images/1mulinello_abu_garcia_revo_ike_mike_iaconelli_1_1920x1920.png",
+          "prezzo": 190.9,
+          "prezzoOriginale": 209.9,
+          "caratteristiche": [
+            "Cuscinetti: 9+1 rulli",
+            "Rapporto: 6.2:1",
+            "Capacità: 0.25 mm / 110 m",
+            "MaxDrag: 5.2 kg",
+            "Peso: 194 gr",
+            "Rapporto: 6.2:1",
+            "Modello: REVO2IKESP20",
+            "Codice: BGR109"
+          ]
+        },
+        {
+          "img": "assets/images/2mulinello_abu_garcia_revo_ike_mike_iaconelli_2_1920x1920.png",
+          "prezzo": 180.9,
+          "prezzoOriginale": 220.9,
+          "caratteristiche": [
+            "Cuscinetti: 9+1 rulli",
+            "Rapporto: 6.2:1",
+            "Capacità: 0.25 mm / 110 m",
+            "MaxDrag: 5.2 kg",
+            "Peso: 204 gr",
+            "Rapporto: 6.2:1",
+            "Modello: REVO2IKESP20",
+            "Codice: BGR109"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "img": "assets/images/mulgiallo.png",
+      "nome": "MULINELLO NOMURA SUMO",
+      "codice": "2",
+      "prezzo": "100",
+      "othersImgs": [
+        "assets/images/mulgiallo1.png",
+        "assets/images/mulgiallo2.png"
+      ]
+    },
+    {
+      "id": 3,
+      "img": "assets/images/DAIWA-TANACOM-1000E.jpg",
+      "nome": "Daiwa Ballistic LT",
+      "codice": "3",
+      "prezzo": "250€"
+    },
+    {
+      "id": 4,
+      "img": "Mulinello Akami Kozor 8000.png",
+      "nome": "Abu Garcia Revo Sx",
+      "codice": "4",
+      "prezzo": "180€"
+    }
+  ],
+  "login": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+  }
+}

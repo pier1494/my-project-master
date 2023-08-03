@@ -1,0 +1,59 @@
+<div class="modal fade font" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-gradient">
+                
+               <img class="w-25" src="assets/images/logo_piccolo-removebg-preview.png">
+                <button type="button" class="btn  btn-outline-light  me-2" data-bs-dismiss="modal"
+                    aria-label="Close"><fa-icon [icon]="facirclexmark"></fa-icon></button>
+            </div>
+            <div class="modal-body">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">LOGIN</h1> 
+                <form>
+                    <div>
+                        <label for="exampleInpicoputEmail1" class="form-label">Email address</label>
+                        <input type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" [(ngModel)]="credenziali.email">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="my-2">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" required class="form-control" id="exampleInputPassword1" name="password" [(ngModel)]="credenziali.password">
+                    </div>
+                    <div>
+                    </div>
+                    <div class="d-flex justify-content-around my-5">
+                        <button (click)="onClick()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Accesso</button>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Salva i dati per il login</label>
+                        </div>
+                        <div>
+                            <a data-bs-dismiss="modal" routerLink="recuperopass">Recupera password</a>
+                        </div>
+                    </div>
+                    <h5 class="fs-5  mb-3">Or use a third-party</h5>
+
+                    <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                        Accedi con  Twitter
+                    </button>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                        Accedi con Facebook
+                    </button>
+
+
+                </form>
+            </div>
+            <div class="modal-footer text-center">
+                <h5>Non sei ancora registrato?</h5>
+                <a routerLink="registrazione" class="btn btn-primary" tabindex="-1" role="button"
+                    aria-disabled="true" data-bs-dismiss="modal">Sign-Up</a>
+            </div>
+        </div>
+    </div>
+</div>

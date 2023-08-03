@@ -1,0 +1,161 @@
+<section class="section-content padding-y bg font">
+    <div class="container">
+
+        <!-- ============================ COMPONENT 2 ================================= -->
+        <div class="row">
+            <main class="col-md-8">
+                <article class="card mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title text-white mb-4">Riepilogo carrello (prezzo unitario iva esclusa)</h4>
+
+                        <div class="row">
+                           
+                            <div *ngIf="riepilogo.length === 0">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="w-100" src="assets/images/emptycart.jpg">
+                                    </div>
+                                    <div class="col-md-7 d-flex align-items-center">
+                                        <h5>NON CI SONO PRODOTTI NEL TUO CARRELLO</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div *ngFor="let item of riepilogo" class="col-md-5  my-2 d-flex mx-3">
+                                <div class="col-md-4 mx-3">
+                                    <div class="aside"> <img class=" w-100" [src]="item.img">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+
+                                    <h6> {{item.nome}}</h6>
+                                    <span>{{item.prezzo}} </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- ... altre carte simili per le informazioni di contatto e di consegna ... -->
+
+                <article class="card mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title text-white mb-4">Informazioni di contatto</h4>
+                        <form action="">
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label>Nome</label>
+                                    <input type="text" placeholder="Digita qui" class="form-control">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label>Cognome</label>
+                                    <input type="text" placeholder="Digita qui" class="form-control">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label>Telefono</label>
+                                    <input type="text" value="+998" class="form-control">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label>Email</label>
+                                    <input type="email" placeholder="esempio@gmail.com" class="form-control">
+                                </div>
+                            </div> <!-- row.// -->
+                        </form>
+                    </div> <!-- card-body.// -->
+                </article> <!-- card.// -->
+
+                <article class="card mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title text-white mb-4">Informazioni di consegna</h4>
+                        <form action="">
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label class="js-check box active">
+                                        <input type="radio" name="dostavka" value="option1" checked="">
+                                        <h6 class="title">Consegna</h6>
+                                        <p class="text-muted">Effettueremo la consegna tramite DHL Kargo</p>
+                                    </label> <!-- js-check.// -->
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label class="js-check box">
+                                        <input type="radio" name="dostavka" value="option1">
+                                        <h6 class="title">Ritiro</h6>
+                                        <p class="text-muted">Vieni nel nostro ufficio da qualche parte </p>
+                                    </label> <!-- js-check.// -->
+                                </div>
+                            </div> <!-- row.// -->
+
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label>Città*</label>
+                                    <select name="" class="form-control">
+                                        <option value="">Tashkent</option>
+                                        <option value="">Buxoro</option>
+                                        <option value="">Samarqand</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label>Area*</label>
+                                    <input type="text" placeholder="Digita qui" class="form-control">
+                                </div>
+                                <div class="form-group col-sm-8">
+                                    <label>Via*</label>
+                                    <input type="text" placeholder="Digita qui" class="form-control">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label>Edificio</label>
+                                    <input type="text" placeholder="" class="form-control">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label>Casa</label>
+                                    <input type="text" placeholder="Digita qui" class="form-control">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label>Codice postale</label>
+                                    <input type="text" placeholder="" class="form-control">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label>CAP</label>
+                                    <input type="text" placeholder="" class="form-control">
+                                </div>
+                            </div> <!-- row.// -->
+                        </form>
+                    </div> <!-- card-body.// -->
+                </article> <!-- card.// -->
+
+                <article class="accordion" id="accordion_pay">
+                    <!-- ... contenuto della sezione Accordion ... -->
+                </article>
+                <!-- fine Accordion -->
+
+            </main> <!-- fine colonna principale -->
+
+            <aside class="col-md-3">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="mb-3 text-white">Panoramica</h4>
+                        <dl class="dlist-align">
+                            <dt class="text-muted">Consegna:</dt>
+                            <dd>Ritiro</dd>
+                        </dl>
+                        <dl class="dlist-align">
+                            <dt class="text-muted">Tipo di consegna:</dt>
+                            <dd>Standard</dd>
+                        </dl>
+                        <dl class="dlist-align">
+                            <dt class="text-muted">Metodo di pagamento:</dt>
+                            <dd>Contanti</dd>
+                        </dl>
+                        <hr>
+                        <dl  class="dlist-align">
+                            <dt>Totale:</dt>
+                            <dd class="h5">{{ subtotale }}€</dd>
+                        </dl>
+                        <hr>
+                        <p class="small mb-3 text-muted">Cliccando accetti i termini e le condizioni </p>
+                        <a href="#" class="btn btn-primary btn-block"> paga </a>
+                    </div> <!-- card-body.// -->
+                </div> <!-- card.// -->
+            </aside> <!-- fine colonna laterale -->
+        </div> <!-- fine riga -->
+    </div> <!-- fine contenitore -->
+</section>

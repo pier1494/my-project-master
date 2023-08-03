@@ -1,0 +1,82 @@
+<div class="container-fluid font" *ngIf="isLogged; else notLoggedInTemplate">
+    <div class="row">
+        <div class="col-md-4 ">
+            <app-asideutente></app-asideutente>
+        </div>
+        <div class="col-md-8 mx-auto">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-white">PANORAMICA</h1>
+                    <p>Qui hai accesso diretto alle informazioni del tuo profilo, agli indirizzi memorizzati e alla
+                        modalità di pagamento standard.</p>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-md-6 d-flex flex-column">
+                    <div>
+                        <h4 class="text-white">DATI PERSONALI</h4>
+                        <hr class="w-75">
+                        <b>Pierpaolo Musardo</b>
+                        <p>piermusa@gmail.com</p>
+                    </div>
+                    <div class="mt-auto">
+                        <a href="/account/profile" title="Modifica profilo"
+                            class="btn btn-primary">Modifica profilo</a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column">
+                    <div>
+                        <h4 class="text-white">MODALITA' DI PAGAMENTO</h4>
+                        <hr class="w-75">
+                        <p>Carta di Credito</p>
+                    </div>
+                    <div class="mt-auto">
+                        <a href="/account/payment" title="Modifica"
+                            class="btn btn-primary">Modifica pagamento</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-md-6  d-flex flex-column">
+                    <div>
+                        <h4 class="text-white">INDIRIZZO DI FATTURAZIONE PREDEFINITO</h4>
+                        <hr class="w-75">
+                        <div>
+                            <p>
+                                Pierpaolo Musardo<br>
+                                Corso Italia 56<br>
+                                380753713<br>
+                                73023 Lecce<br>
+                                Lecce<br>
+                                Italy
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-auto">
+                        <a href="/account/address/137225481da84ec3a1bb9bbd1a20a511" title="Modifica indirizzo"
+                            class="btn btn-primary">Modifica indirizzo</a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column">
+                    <div class="card-body">
+                        <h4 class="card-title text-white">INDIRIZZO DI SPEDIZIONE PREDEFINITO</h4>
+                        <hr class="w-75">
+                        <p>Corrisponde all’indirizzo di fatturazione</p>
+                    </div>
+                    <div class="card-actions mt-auto">
+                        <a href="/account/address/137225481da84ec3a1bb9bbd1a20a511"
+                            class="btn  btn-primary">Modifica indirizzo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #notLoggedInTemplate>
+    <div class="alert alert-danger font" role="alert">
+        <div class="scroller">
+          Sembra che tu non abbia effettuato il login.
+          <a routerLink="/dashboard" class="alert-link">TORNA ALLA HOME</a>. Give it a click if you like.
+        </div>
+      </div>
+        </ng-template>

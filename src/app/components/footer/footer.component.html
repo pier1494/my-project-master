@@ -1,0 +1,80 @@
+<footer class="container-fluid bg-gradient font">
+
+  <div class="row mt-3">
+    <div class="col-md-12 text-center mt-2">
+      <h3 class="text-white">PRO-PESCA S.r.l.</h3>
+    </div>
+   
+    
+        
+      </div>
+
+    <div class="row d-flex justify-content-around mt-3">
+      <div class="col-md-4 text-center">
+        <ul class="nav  list-unstyled d-flex justify-content-center mb-1">
+          <fa-icon [icon]="fawhatsapp" class="icon custom-whats"></fa-icon>
+          <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/"><fa-icon [icon]="faInstagram"
+                class="custom-instagram icon"></fa-icon></a></li>
+          <li class="ms-3"><a class="text-muted"
+              href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Dit"><fa-icon
+                [icon]="faTwitter" class=" icon custom-twit"></fa-icon></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://it-it.facebook.com/"><fa-icon [icon]="faFacebookF"
+                class="icon custom-facebook"></fa-icon></a></li>
+  
+        </ul>
+        <h5 class="titoli-footer">SEDE AMMINISTRATIVA E OPERATIVA:</h5>
+        <p>Corso Italia 56-73023 Merine(Le) italy</p>
+        <p> Tel.+3807537 r.a.-Fax +222222222222</p>
+        <p>www.pro-pesca.it - PEC: pro-pesca@pec.it</p>
+
+      </div>
+      <div class="col-md-4 mt-4 text-center">
+        <h5 class="titoli-footer"> PRODOTTI</h5>
+        <p>Canne da pesca</p>
+        <p>Mulinelli</p>
+        <p>Ami e lenze </p>
+        <p>Abbigliamento</p>
+      </div>
+      <div class="col-md-4 text-center mb-1">
+        <button class="btn btn-primary" (click)="openPopup()">CHI SIAMO</button>
+        <div *ngIf="isPopupOpen" class="popup-overlay">
+          <div class="popup-content">
+            <span (click)="closePopup()" class="close-button">&times;</span>
+            <p class="text-center  bg-gradient">In Pro-Pesca S.r.l., la nostra passione per la pesca è ciò che ci guida
+              ogni giorno.
+              Siamo una squadra di pescatori appassionati e esperti, uniti dalla missione di offrire ai nostri clienti
+              l'esperienza di pesca più gratificante e soddisfacente possibile.
+              Con una vasta selezione di canne da pesca, mulinelli, ami e lenze montate, e abbigliamento, ci impegniamo
+              a
+              fornire ai pescatori di ogni livello le migliori attrezzature e accessori per aiutarli a raggiungere i
+              loro
+              obiettivi e vivere avventure emozionanti sulle acque.
+              La nostra sede amministrativa e operativa si trova a Merine, in provincia di Lecce, Italia, ma il nostro
+              amore per la pesca ci porta ad essere presenti ovunque ci sia un fiume, un lago o il mare!
+              Siamo più di un semplice negozio di pesca; siamo la vostra risorsa di fiducia, pronti a fornirvi il
+              supporto
+              tecnico necessario e le informazioni sulla garanzia dei nostri prodotti. Inoltre, offriamo servizi di
+              manutenzione per mulinelli e supporto nella ricerca dei punti vendita più vicini.
+              La nostra missione è superare le aspettative dei nostri clienti, offrendo prodotti di alta qualità, prezzi
+              competitivi e un servizio clienti eccezionale. Vogliamo essere il vostro compagno di pesca di fiducia,
+              pronto a condividere la nostra conoscenza e passione per questo affascinante sport.
+              Unisciti a noi in questa avventura di pesca e scopri il meglio dell'attrezzatura e degli accessori per
+              rendere ogni momento sulla riva dell'acqua un'esperienza memorabile. Grazie per aver scelto Pro-Pesca
+              S.r.l.
+              come la vostra destinazione di fiducia per tutto ciò che riguarda la pesca! <br>
+              Il Team di Pro-Pesca S.r.l</p>
+
+          </div>
+        </div>
+        <h5 class="titoli-footer mt-2">SUPPORTO TECNICO</h5>
+        <p> Tecnico </p>
+        <p>Informazioni sulla garanzia</p>
+        <p>Reel Maintainance</p>
+        <p>Exploded Views</p>
+        <p> Dealer Locator</p>
+      </div>
+
+    </div>
+
+
+</footer>

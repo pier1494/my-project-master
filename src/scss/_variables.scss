@@ -1,0 +1,60 @@
+.draggable-area:hover {
+  cursor: grab;
+}
+
+.nav-link  {
+    color: #CBB26A !important;
+    background-color: transparent !important;
+    padding: 2px!important;
+
+    &:hover{
+        text-decoration: underline #fff!important;
+        color: #ffffff !important;
+        background-color: #CBB26A !important;
+       border-radius: 10px!important;
+        transition: all 0.1s ease-in-out !important;
+        text-decoration: underline #fff, overline #ffffff !important;
+        color: #ffffff !important;
+        background-color: #CBB26A !important;
+        padding: 2px!important;
+        cursor: pointer;
+    }
+}
+
+
+.animazione-primaria{
+    text-decoration: underline !important;
+    color: #CBB26A !important;
+    background-color: transparent !important;
+  &:hover{
+    text-decoration: underline #fff, overline #ffffff !important;
+    color: #ffffff !important;
+    background-color: #CBB26A !important;
+    transition: all 0.2s ease-in-out;
+    text-decoration: underline #fff, overline #ffffff !important;
+    color: #ffffff !important;
+    background-color: #CBB26A !important;
+    cursor: pointer;
+  }
+}
+
+.btn-primary{
+  border: 1px solid #CBB26A!important;
+
+  text-decoration: underline !important;
+    color: #CBB26A !important;
+    background-color: transparent !important;
+  &:hover{
+    text-decoration: underline #fff, overline #ffffff !important;
+    color: #ffffff !important;
+    background-color: #CBB26A !important;
+   
+    transition: all 0.4s ease-in-out;
+    text-decoration: underline #fff, overline #ffffff !important;
+    color: #ffffff !important;
+    background-color: #CBB26A !important;
+    cursor: pointer;
+  }
+}
+
+
