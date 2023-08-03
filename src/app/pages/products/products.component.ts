@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Carousel } from 'bootstrap';
 import { ItemCarrello, Modello, Prodotto } from 'src/app/interfaces/categorie';
@@ -25,7 +26,9 @@ export class ProductsComponent {
   product: any = {
       
   };
+
   constructor(
+    private sanitizer: DomSanitizer,
     private route: ActivatedRoute,
     private router: Router,
     private commonService: CommonService,
@@ -40,10 +43,14 @@ export class ProductsComponent {
     const productId = this.route.snapshot.paramMap.get('id');
     // in quest'altro modo sto rimanendo aggiornato sui cambiamenti dei parametri
     this.route.params.subscribe((valoreParametri: any) => {
-      console.log("RISULTATI PARAMETRI", valoreParametri);
+      console.log("RISULTATI PAsRAMETRI", valoreParametri);
       this.aggiornaProdotto(valoreParametri.id) 
     })
     this.aggiornaProdotto(productId);
+  }
+
+  sanitize(url: string) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
   private aggiornaProdotto(productId: any){
