@@ -15,14 +15,21 @@
                     
                 </div>
                 <h6> ABU GARCIA IACONELLI REVO IKE</h6>
-                <div class="my-2 d-flex justify-content-center align-items-start">
-                    <ul class="rating">
-                        <li> <fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
-                        <li><fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
-                        <li><fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
-              
-                    </ul>
-                </div>
+                <ng-template #templa>
+                    <div class="my-2 d-flex justify-content-center align-items-start">
+                        <ul class="rating">
+                            <li> <fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
+                            <li><fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
+                            <li><fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
+                        </ul>
+                    </div>
+                </ng-template>
+                <!-- <ng-template #templb>
+                    <p>non ci sono recensioni</p>
+                </ng-template> -->
+<ng-container *ngTemplateOutlet="templa"></ng-container>
+
+
                 <div class="product-content">
                     <h3 class="title"><a href="#">Mulinelli</a></h3>
                     <div class="price">190.9€
@@ -40,7 +47,7 @@
                     
                 </div>
                 <h6>TICA-TUNA MASTER EDITION</h6>
-                <div class="my-2 d-flex justify-content-center align-items-start">
+                <!-- <div class="my-2 d-flex justify-content-center align-items-start">
                     <ul class="rating">
                         <li> <fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
                         <li><fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
@@ -48,7 +55,9 @@
                         <li><fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
                         <li><fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
                     </ul>
-                </div>
+                </div> -->
+                <ng-container *ngTemplateOutlet="templa"></ng-container>
+
                 <div class="product-content">
                     <h3 class="title"><a routerLink="['/products', 2]">Mulinelli</a></h3>
                     <div class="price">100.00€
@@ -70,7 +79,7 @@
                     
                 </div>
                 <h6>DAIWA TANACOM 1000 E</h6>
-                <div class="my-2 d-flex justify-content-center align-items-start">
+                <!-- <div class="my-2 d-flex justify-content-center align-items-start">
                     <ul class="rating">
                         <li> <fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
                         <li><fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
@@ -78,7 +87,9 @@
                         <li><fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
                         <li><fa-icon [icon]="faStar" class="fa-star"></fa-icon></li>
                     </ul>
-                </div>
+                </div> -->
+                <ng-container *ngTemplateOutlet="templa"></ng-container>
+
                 <div class="product-content">
                     <h3 class="title"><a href="#">Mulinelli</a></h3>
                     <div class="price">250.00€

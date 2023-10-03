@@ -7,6 +7,7 @@ import { faStar } from '@fortawesome/free-regular-svg-icons';
   selector: 'app-mulinelli',
   templateUrl: './mulinelli.component.html',
   styleUrls: ['./mulinelli.component.scss']
+  
 })
 
 export class MulinelliComponent {
