@@ -146,7 +146,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" *ngIf="product?.videoUrl">
 
                 <iframe width="100%" height="100%" [src]="sanitize(product.videoUrl)" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -154,6 +154,9 @@
 
 
 
+            </div>
+            <div class="col-md-6 d-flex justify-content-center"  *ngIf="!product?.videoUrl">
+                <p>Prodotto senza video</p>
             </div>
             <div class=" font col-md-6 text-center">
                 <h2 class="text-white">Caratteristiche Mulinello Abu Garcia REVO IKE (Mike Iaconelli)</h2>
