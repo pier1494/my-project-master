@@ -29,21 +29,6 @@ export class BologneseComponent implements OnInit {
     });
   }
 
-  // Funzione per generare il rating in base al valore
-  generaRating(rating: number): string {
-    let ratingHTML = '';
-
-    if (rating >= 1 && rating <= 5) {
-      for (let i = 1; i <= rating; i++) {
-        ratingHTML += '<i class="fa fa-star"></i>';
-      }
-    } else {
-      ratingHTML = 'Valore di rating non valido';
-    }
-
-    return ratingHTML;
-  }
-
 }
 
 
