@@ -30,6 +30,7 @@ import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { FormsModule } from '@angular/forms';
 import { SottocategoriaComponent } from './pages/sottocategoria/sottocategoria.component';
 import { BologneseComponent } from './pages/bolognese/bolognese.component';
+import { RatingComponent } from './components/rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { BologneseComponent } from './pages/bolognese/bolognese.component';
     Spinning2Component,
     CategoriaComponent,
     SottocategoriaComponent,
-    BologneseComponent
+    BologneseComponent,
+    RatingComponent
     
   ],
   imports: [

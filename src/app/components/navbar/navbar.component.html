@@ -46,11 +46,12 @@
         <li *ngFor="let categoria of datiCatalogo" [class.selezionata]="categoria.nome === categoriaSelezionata">
           <a class="nav-link mx-1" (click)="goToCategoriaSelezionata(categoria.nome)"> <h6>{{ categoria.nome }}</h6></a>
         <!-- <li class="nav-item"><a routerLink="catalogo" class=" nav-link custom-menu-item">catalogo</a></li> -->
-        <li><a href="/bolognese">Bolognese</a></li>
+        <li class="nav-item"><a routerLink="bolognese">Bolognese</a></li>
+         <li class="nav-item ms-2"><a routerLink="spinning">Spinning</a></li>
       </ul>
-      <!-- <ul class="nav nav-pills">
-        <li class="nav-item"><a routerLink="spinning" class="nav-link custom-menu-item">SPINNING</a></li>
-        <li class="nav-item"><a routerLink="surfcasting" class=" nav-link custom-menu-item">SURF-CASTING</a></li>
+      <!-- <ul class="nav nav-pills">-->
+       
+        <!--<li class="nav-item"><a routerLink="surfcasting" class=" nav-link custom-menu-item">SURF-CASTING</a></li>
         <li class="nav-item"><a routerLink="/bolognese.html" class=" nav-link custom-menu-item">BOLOGNESE</a></li>
         <li class="nav-item"><a routerLink="/subacquea.html" class=" nav-link custom-menu-item">SUBACQUEA</a></li>
 

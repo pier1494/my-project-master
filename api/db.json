@@ -88,37 +88,43 @@
           "nome": "Savage Gear king slider",
           "codice": "01",
           "prezzo": "18.5",
-          "img": "assets/images/5069.jpg"
+          "img": "assets/images/5069.jpg",
+          "rating": 5
         },
         {
           "nome": "savage gear gold jig",
           "codice": "01",
           "prezzo": "190€",
-          "img": "assets/images/oro.jpg"
+          "img": "assets/images/oro.jpg",
+          "rating": 5
         },
         {
           "nome": "Mulinello Maver darkside 10000 FRONT DRAG",
           "codice": "01",
           "prezzo": "190€",
-          "img": "assets/images/71-6PzmkYLL._AC_UL600_SR600,600_.jpg"
+          "img": "assets/images/71-6PzmkYLL._AC_UL600_SR600,600_.jpg",
+          "rating": 3
         },
         {
           "nome": "Dingbear 1093Yd/1000m 135LB/0.60mm",
           "codice": "01",
           "prezzo": "30€",
-          "img": "assets/images/trecciato.png"
+          "img": "assets/images/trecciato.png",
+          "rating": 1
         },
         {
           "nome": "Zodias 268ML 2 Spinning",
           "codice": "01",
           "prezzo": "165",
-          "img": "assets/images/Zodias268ML-2-Spinning.png"
-        },
+          "img": "assets/images/Zodias268ML-2-Spinning.png",
+          "rating": 0
+          },
         {
           "nome": "akami scatola porta accessori pb 21",
           "codice": "01",
           "prezzo": "190€",
-          "img": "assets/images/akami-scatola-porta-accessori-pb-21.jpg"
+          "img": "assets/images/akami-scatola-porta-accessori-pb-21.jpg",
+          "rating": 0
         }
       ],
       "sottocategorie": [

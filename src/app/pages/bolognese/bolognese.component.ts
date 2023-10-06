@@ -14,11 +14,7 @@ export class BologneseComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
   faStar = faStar;
-  // oneStarTemplate = null;
-  // twoStarTemplate = null;
-  // threeStarTemplate = null;
-  // fourStarTemplate = null;
-  // fiveStarTemplate = null;
+  
   ngOnInit(): void {
     // Effettua una richiesta HTTP per ottenere il database JSON
     this.http.get('/api/categoria').subscribe((data: any) => {
