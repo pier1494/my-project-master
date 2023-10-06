@@ -46,7 +46,7 @@
         <li *ngFor="let categoria of datiCatalogo" [class.selezionata]="categoria.nome === categoriaSelezionata">
           <a class="nav-link mx-1" (click)="goToCategoriaSelezionata(categoria.nome)"> <h6>{{ categoria.nome }}</h6></a>
         <!-- <li class="nav-item"><a routerLink="catalogo" class=" nav-link custom-menu-item">catalogo</a></li> -->
-
+        <li><a href="/bolognese">Bolognese</a></li>
       </ul>
       <!-- <ul class="nav nav-pills">
         <li class="nav-item"><a routerLink="spinning" class="nav-link custom-menu-item">SPINNING</a></li>

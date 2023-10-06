@@ -13,6 +13,7 @@ export interface prodotti {
     codice: string;
     prezzo: string;
     img?: string;
+    rating:number;
 }
 
 export interface Prodotto {

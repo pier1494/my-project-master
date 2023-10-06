@@ -29,6 +29,7 @@ import { Spinning2Component } from './pages/spinning2/spinning2.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { FormsModule } from '@angular/forms';
 import { SottocategoriaComponent } from './pages/sottocategoria/sottocategoria.component';
+import { BologneseComponent } from './pages/bolognese/bolognese.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { SottocategoriaComponent } from './pages/sottocategoria/sottocategoria.c
     // CatalogoComponent,
     Spinning2Component,
     CategoriaComponent,
-    SottocategoriaComponent
+    SottocategoriaComponent,
+    BologneseComponent
     
   ],
   imports: [
