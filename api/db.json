@@ -163,7 +163,29 @@
     },
     {
       "nome": "BOLOGNESE",
-      "prodotti": [],
+      "prodotti": [ {
+        "nome": "Mulinello Abu Garcia Revo IKE",
+        "codice": "01",
+        "prezzo": "190€",
+        "img": "assets/images/Mulinello Abu Garcia Revo IKE (Mike Iaconelli).png",
+        "rating": 2
+      },
+      {
+        "nome": "trabucco filo xps surf cast 025 300m",
+        "codice": "02",
+        "prezzo": "22.5€",
+        "img": "assets/images/trabucco-filo-xps-surf-cast-025-300m.jpg",
+        "rating": 4
+
+      },
+      {
+        "nome": "lineaeffe superior cast",
+        "codice": "03",
+        "prezzo": "95.9€",
+        "img": "assets/images/lineaeffe-superior-cast.jpg",
+        "rating": 5
+      }
+    ],
       "sottocategorie": [
         {
           "nome": "Mulinelli",
