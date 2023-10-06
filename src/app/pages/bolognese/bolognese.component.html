@@ -1,35 +1,4 @@
 
-
-<ng-template #oneStarTemplate>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-</ng-template>
-
-<ng-template #twoStarTemplate>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-</ng-template>
-
-<ng-template #threeStarTemplate>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-</ng-template>
-
-<ng-template #fourStarTemplate>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-</ng-template>
-
-<ng-template #fiveStarTemplate>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-  <fa-icon [icon]="faStar" class="fa-star checked"></fa-icon>
-</ng-template>
-
 <div class="container-fluid font">
   <div class="row">
       <div class="col-md-2">
@@ -53,12 +22,8 @@
   </ng-template> -->
  
   <div class="rating">
-     
-    <ng-container *ngIf="prodotto.rating === 1; then  oneStarTemplate"></ng-container>
-    <ng-container *ngIf="prodotto.rating === 2; then twoStarTemplate"></ng-container>
-    <ng-container *ngIf="prodotto.rating === 3; then threeStarTemplate"></ng-container>
-    <ng-container *ngIf="prodotto.rating === 4; then fourStarTemplate"></ng-container>
-    <ng-container *ngIf="prodotto.rating === 5; then fiveStarTemplate"></ng-container>
+    
+    <fa-icon *ngFor="let _ of [].constructor(prodotto.rating); let i = index" [icon]="faStar" class="fa-star checked"></fa-icon>
 
 
   </div>
@@ -72,21 +37,3 @@
   </div>
 </div>
 </div></div></div>
-
-<!-- <div *ngFor="let prodotto of bologneseArray">
-  <div class="prodotto">
-    <h3>{{ prodotto.nome }}</h3>
-    <p>Codice: {{ prodotto.codice }}</p>
-    <p>Prezzo: {{ prodotto.prezzo }}</p>
-    <div class="rating">
-     
-      <ng-container *ngIf="prodotto.rating === 1; then  oneStarTemplate"></ng-container>
-      <ng-container *ngIf="prodotto.rating === 2; then twoStarTemplate"></ng-container>
-      <ng-container *ngIf="prodotto.rating === 3; then threeStarTemplate"></ng-container>
-      <ng-container *ngIf="prodotto.rating === 4; then fourStarTemplate"></ng-container>
-      <ng-container *ngIf="prodotto.rating === 5; then fiveStarTemplate"></ng-container>
-
-
-    </div>
-  </div>
-</div> -->
