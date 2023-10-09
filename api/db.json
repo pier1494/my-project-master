@@ -118,7 +118,7 @@
           "prezzo": "165",
           "img": "assets/images/Zodias268ML-2-Spinning.png",
           "rating": 0
-          },
+        },
         {
           "nome": "akami scatola porta accessori pb 21",
           "codice": "01",
@@ -476,6 +476,13 @@
       "cognome": "angi",
       "email": "angelica@angi",
       "password": "angi"
+    },
+    {
+      "id": "ZQicv-u",
+      "nome": "davide",
+      "cognome": "perrone",
+      "email": "davide@davi",
+      "password": "davide"
     }
   ]
 }

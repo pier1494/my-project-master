@@ -14,31 +14,7 @@
 
                 </div>
                 <h6> {{ prodotto.nome }}</h6>
-                <div class="rating">
-                    <ng-container *ngIf="prodotto.rating > 0 && prodotto.rating >= 5">
-                        <div class="alert alert-success text-center" role="alert">
-                            <fa-icon *ngFor="let _ of [].constructor(prodotto.rating); let i = index" [icon]="faStar"
-                                class="fa-star checked"></fa-icon>
-                            <p>Valutazione massima </p>
-                        </div>
-                    </ng-container>
-                    <ng-container *ngIf="prodotto.rating > 0 && prodotto.rating < 5">
-                        <fa-icon *ngFor="let _ of [].constructor(prodotto.rating); let i = index" [icon]="faStar"
-                            class="fa-star checked"></fa-icon>
-                    </ng-container>
-                    <ng-container *ngIf="prodotto.rating <=0">
-                        <div class="alert alert-danger text-center" role="alert">
-                            <p>Nessuna recensione</p>
-                        </div>
-                    </ng-container>
-                    <div class="product-content">
-                        <h3 class="title"><a href="#">Mulinelli</a></h3>
-                        <div class="price">{{prodotto.prezzo}}
-                            <span>220</span>
-                        </div>
-                        <!-- <a class="add-to-cart"  (click)="aggiungiAlCarrello()">+ Aggiungi al carrello</a> -->
-                    </div>
-                </div>
+                <app-rating [prodotto]="prodotto"></app-rating>
             </div>
         </div>
     </div>
