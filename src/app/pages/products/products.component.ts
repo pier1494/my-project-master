@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Carousel } from 'bootstrap';
-import { ItemCarrello, Modello, Prodotto } from 'src/app/interfaces/categorie';
+import { ItemCarrello, Modello, Prodotto, prodotti } from 'src/app/interfaces/categorie';
 import { CommonService } from 'src/app/services/common.service';
 import { SharedDataService } from 'src/app/shared-data-service.service';
 
@@ -13,6 +13,7 @@ import { SharedDataService } from 'src/app/shared-data-service.service';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent {
+  productArrey:Modello [] = []
   isLoading = false;
   isZoomed = false;
 

@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="row d-flex justify-content-around">
+        <div class="col-md-4" *ngFor="let prodotti of spinningArray">
+            <h2>recensisci il prodotto</h2>
+            
+                <fa-icon *ngFor="let _ of [].constructor(prodotti.rating); let i = index" [icon]="faStar"
+                    class="fa-star checked"></fa-icon>
+            
+        </div>
+        <div class="col-md-3" *ngIf="prodotto">
+            <img [src]="prodotto.img" class="card-img-top" alt="{{ prodotto.nome }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ prodotto.nome }}</h5>
+                <p class="card-text">Codice: {{ prodotto.codice }}</p>
+                <p class="card-text">Prezzo: {{ prodotto.prezzo }}</p>
+                <p class="card-text">Rating: {{ prodotto.rating }}</p>
+                <p class="card-text">Categoria: {{ prodotto.categoria }}</p>
+                <!-- Altri campi dati del prodotto -->
+            </div>
+        </div>
+    </div>
+</div>

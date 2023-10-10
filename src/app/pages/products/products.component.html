@@ -53,6 +53,9 @@
                 <a (click)="scegliModelli()"><button class="btn  btn-primary rounded-pill px-3" type="button">SCEGLI IL
                         TUO MODELLO<i class="fa-solid fa-arrow-down px-2"></i></button>
                 </a>
+      
+                
+                <app-hr></app-hr>
             </div>
         </div>
     </div>
@@ -71,6 +74,8 @@
         <div class="col-md-3" *ngFor="let modello of product.modelli">
             <div class="card mb-5" style="width: 25rem;">
                 <img [src]="modello.img" class="card-img-top zoom-effect" alt="...">
+                <app-rating [prodotto]="product.modello"></app-rating>
+
                 <div class="card-body">
                     <h5>{{ product.nome }}</h5>
 

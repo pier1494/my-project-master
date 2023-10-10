@@ -84,25 +84,26 @@
       "id": "SPINNING",
       "nome": "SPINNING",
       "prodotti": [
-        {
+        {"id":1,
           "nome": "Savage Gear king slider",
           "codice": "01",
           "prezzo": "18.5",
-          "img": "assets/images/5069.jpg",
+          "img": "artificiali.png",
           "rating": 5
         },
-        {
+        {"id":2,
           "nome": "savage gear gold jig",
           "codice": "01",
           "prezzo": "190€",
-          "img": "assets/images/oro.jpg",
+          "img": "oro.jpg",
           "rating": 5
         },
         {
+          "id":3,
           "nome": "Mulinello Maver darkside 10000 FRONT DRAG",
           "codice": "01",
           "prezzo": "190€",
-          "img": "assets/images/71-6PzmkYLL._AC_UL600_SR600,600_.jpg",
+          "img": "71-6PzmkYLL._AC_UL600_SR600,600_.jpg",
           "rating": 3
         },
         {
@@ -296,6 +297,7 @@
           "img": "assets/images/1mulinello_abu_garcia_revo_ike_mike_iaconelli_1_1920x1920.png",
           "prezzo": 190.9,
           "prezzoOriginale": 209.9,
+          "rating":5,
           "caratteristiche": [
             "Cuscinetti: 9+1 rulli",
             "Rapporto: 6.2:1",
@@ -312,6 +314,7 @@
           "img": "assets/images/2mulinello_abu_garcia_revo_ike_mike_iaconelli_2_1920x1920.png",
           "prezzo": 180.9,
           "prezzoOriginale": 220.9,
+          "rating":5,
           "caratteristiche": [
             "Cuscinetti: 9+1 rulli",
             "Rapporto: 6.2:1",

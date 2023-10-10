@@ -16,6 +16,7 @@ import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { AuthGuard } from './auth.guard';
 import { SottocategoriaComponent } from './pages/sottocategoria/sottocategoria.component';
 import { BologneseComponent } from './pages/bolognese/bolognese.component';
+import { ProdottoComponent } from './pages/prodotto/prodotto.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -34,8 +35,12 @@ const routes: Routes = [
   { path: 'recuperopass', component: RecuperopassComponent },
   { path: 'catalogo/:categoria', component: CategoriaComponent },
   { path: 'sottocategoria/:sottocategoria', component: SottocategoriaComponent },
-
-  { path: 'bolognese', component: BologneseComponent } 
+  { path: 'prodotto', component: ProdottoComponent } ,
+  { path: 'spinning', component: SpinningComponent }, // Rotta per la pagina spinning
+  { path: 'prodotto/:id', component: ProdottoComponent }, // Rotta per la pagina del prodotto con parametro 'id'
+  { path: '', redirectTo: '/spinning', pathMatch: 'full' },
+  { path: 'bolognese', component: BologneseComponent } ,
+  { path: 'prodotto/:id', component: ProdottoComponent },
 
 
 ];

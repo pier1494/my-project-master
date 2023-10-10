@@ -7,7 +7,7 @@
             <div class="product-grid my-3" style="width: 20em" *ngFor="let prodotto of spinningArray"
                 style="width: 20em;">
                 <div class="product-image zoombanner">
-                    <a routerLink="/products">
+                  <a [routerLink]="['/prodotto', prodotto.id]">
                         <img src="assets/images/Mulinello Abu Garcia Revo IKE (Mike Iaconelli).png" class="card-img-top"
                             alt="...">
                     </a>

@@ -31,6 +31,8 @@ import { FormsModule } from '@angular/forms';
 import { SottocategoriaComponent } from './pages/sottocategoria/sottocategoria.component';
 import { BologneseComponent } from './pages/bolognese/bolognese.component';
 import { RatingComponent } from './components/rating/rating.component';
+import { ProdottoComponent } from './pages/prodotto/prodotto.component';
+
 
 @NgModule({
   declarations: [
@@ -60,7 +62,8 @@ import { RatingComponent } from './components/rating/rating.component';
     CategoriaComponent,
     SottocategoriaComponent,
     BologneseComponent,
-    RatingComponent
+    RatingComponent,
+    ProdottoComponent,
     
   ],
   imports: [
@@ -69,6 +72,7 @@ import { RatingComponent } from './components/rating/rating.component';
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

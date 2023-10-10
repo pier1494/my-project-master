@@ -9,11 +9,13 @@ export interface sottocategorie {
 }
 
 export interface prodotti {
+    id:string;
     nome: string;
     codice: string;
     prezzo: string;
     img?: string;
     rating:number;
+    categoria: string;
 }
 
 export interface Prodotto {
@@ -31,6 +33,7 @@ export interface Modello {
     nome: string;
     img: string;
     prezzo: number;
+    rating:number;
     prezzoOriginale?: number;
     caratteristiche: Array<string>;
   }
