@@ -525,7 +525,8 @@
       "id": 3,
       "id_user": "YL5Kn_c",
       "id_prodotto": 3,
-      "recensione": "Il prodotto XYZ è fantastico! Non posso fare a meno di raccomandarlo a tutti."
+      "recensione": " Non posso fare a meno di raccomandarlo a tutti.",
+      "nuovaProprieta": "NuovoValore"
     },
     {
       "recensione": "bn cvbc",
@@ -534,6 +535,34 @@
     {
       "recensione": "xdvzsvraa",
       "id": 5
+    },
+    {
+      "recensione": "bello",
+      "id": 6
+    },
+    {
+      "recensione": "bello",
+      "id": 7
+    },
+    {
+      "recensione": "jtdifyug",
+      "id": 8
+    },
+    {
+      "recensione": "francesco presidente",
+      "id": 9
+    },
+    {
+      "recensione": "franscesco number one",
+      "id": 10
+    },
+    {
+      "recensione": "franscesco number one",
+      "id": 11
+    },
+    {
+      "recensione": "dsrfxdghj",
+      "id": 12
     }
   ]
 }

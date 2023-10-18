@@ -7,21 +7,19 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ModificarecensioniService {
-
   constructor(private http: HttpClient) { }
 
-  getrecensioni(): Observable<recensioni[]> {
-    const url = '/api/recensioni';
-    return this.http.get<recensioni[]>(url);
+  caricaRecensioni(): Observable<recensioni[]> {
+    return this.http.get<recensioni[]>('/api/recensioni');
   }
-  // .pipe(
-  //   map((recensioni: recensioni[]) => {
-  //     return recensioni.map(recensione => {
-  //       return {
-  //         ...recensione,
-  //         nuovaProprieta: 'NuovoValore'
-  //       };
-  //     });
-  //   })
-  // )
+
+  salvaRecensione(recensione: recensioni): Observable<recensioni> {
+    if (recensione.id) {
+      // Esegui una richiesta PUT per aggiornare la recensione esistente
+      return this.http.put<recensioni>('/api/recensioni/' + recensione.id, recensione);
+    } else {
+      // Esegui una richiesta POST per aggiungere una nuova recensione
+      return this.http.post<recensioni>('/api/recensioni/', recensione);
+    }
+  }
 }
