@@ -1,0 +1,18 @@
+<div *ngFor="let recensione of recensioniArray">
+  <div>
+    <p>{{ recensione.recensione }}</p>
+    <button (click)="avviaModifica(recensione)">Modifica recensione</button>
+  </div>
+  <div *ngIf="recensioneInModifica === recensione">
+    <textarea [(ngModel)]="recensioneInModifica.recensione"></textarea>
+    <button (click)="salvaModifiche(recensione)">Salva</button>
+  </div>
+
+  <div>
+    <button (click)="mostraInput()">lascia una recensione</button>
+  </div>
+</div>
+  <div *ngIf="inputVisibile">
+    <input [(ngModel)]="recensioneNew.recensione" placeholder="Inserisci recensione">
+    <button (click)="salvaModifiche(recensioneNew)">Salva</button>
+  </div>

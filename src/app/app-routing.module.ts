@@ -17,6 +17,7 @@ import { AuthGuard } from './auth.guard';
 import { SottocategoriaComponent } from './pages/sottocategoria/sottocategoria.component';
 import { BologneseComponent } from './pages/bolognese/bolognese.component';
 import { ProdottoComponent } from './pages/prodotto/prodotto.component';
+import { SurfcastingComponent } from './pages/surfcasting/surfcasting.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/spinning', pathMatch: 'full' },
   { path: 'bolognese', component: BologneseComponent } ,
   { path: 'prodotto/:id', component: ProdottoComponent },
+  { path: 'surfcasting', component: SurfcastingComponent } ,
 
 
 ];

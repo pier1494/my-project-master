@@ -51,7 +51,11 @@ export class CategoriaComponent implements OnInit {
       );
       // controllo i risultati: nel primo elemento devo trovare i prodotti
       this.prodottiCategoria = risultati?.length > 0 ? risultati[0].prodotti : [];
-      console.log(this.prodottiCategoria);
+      this.catalogoService.completaProdotti(this.prodottiCategoria).subscribe((datiCompleti: any[]) => {
+        this.prodottiCategoria = datiCompleti;
+      });
+
+      console.log("PRODOTTI CATEGORIA: ", this.prodottiCategoria);
     });
   }
   aggiungiAlCarrello(item: Prodotto | Modello) {

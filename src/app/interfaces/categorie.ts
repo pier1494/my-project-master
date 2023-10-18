@@ -9,12 +9,12 @@ export interface sottocategorie {
 }
 
 export interface prodotti {
-    id:string;
+    id: string;
     nome: string;
     codice: string;
     prezzo: string;
     img?: string;
-    rating:number;
+    rating: number;
     categoria: string;
 }
 
@@ -33,10 +33,10 @@ export interface Modello {
     nome: string;
     img: string;
     prezzo: number;
-    rating:number;
+    rating: number;
     prezzoOriginale?: number;
     caratteristiche: Array<string>;
-  }
+}
 
 export interface caratteristiche {
     Cuscinetti: string,
@@ -63,5 +63,13 @@ export interface user {
     username: string;
     password: string;
     nome: string;
-    cognome:string;
+    cognome: string;
+}
+
+export interface recensioni {
+    nuovaProprieta: string;
+    id: any;
+    id_user: string;
+    id_prodotto: number;
+    recensione: string;
 }

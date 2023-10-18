@@ -27,11 +27,12 @@ import { RecuperopassComponent } from './pages/recuperopass/recuperopass.compone
 // import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 import { Spinning2Component } from './pages/spinning2/spinning2.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SottocategoriaComponent } from './pages/sottocategoria/sottocategoria.component';
 import { BologneseComponent } from './pages/bolognese/bolognese.component';
 import { RatingComponent } from './components/rating/rating.component';
 import { ProdottoComponent } from './pages/prodotto/prodotto.component';
+import { SurfcastingComponent } from './pages/surfcasting/surfcasting.component';
 
 
 @NgModule({
@@ -64,6 +65,7 @@ import { ProdottoComponent } from './pages/prodotto/prodotto.component';
     BologneseComponent,
     RatingComponent,
     ProdottoComponent,
+    SurfcastingComponent,
     
   ],
   imports: [
@@ -72,6 +74,7 @@ import { ProdottoComponent } from './pages/prodotto/prodotto.component';
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

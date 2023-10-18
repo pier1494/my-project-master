@@ -84,14 +84,16 @@
       "id": "SPINNING",
       "nome": "SPINNING",
       "prodotti": [
-        {"id":1,
+        {
+          "id": 1,
           "nome": "Savage Gear king slider",
           "codice": "01",
           "prezzo": "18.5",
           "img": "artificiali.png",
           "rating": 5
         },
-        {"id":2,
+        {
+          "id": 2,
           "nome": "savage gear gold jig",
           "codice": "01",
           "prezzo": "190€",
@@ -99,7 +101,7 @@
           "rating": 5
         },
         {
-          "id":3,
+          "id": 3,
           "nome": "Mulinello Maver darkside 10000 FRONT DRAG",
           "codice": "01",
           "prezzo": "190€",
@@ -171,27 +173,9 @@
     {
       "nome": "BOLOGNESE",
       "prodotti": [
-        {
-          "nome": "Mulinello Abu Garcia Revo IKE",
-          "codice": "01",
-          "prezzo": "190€",
-          "img": "assets/images/Mulinello Abu Garcia Revo IKE (Mike Iaconelli).png",
-          "rating": ""
-        },
-        {
-          "nome": "trabucco filo xps surf cast 025 300m",
-          "codice": "02",
-          "prezzo": "22.5€",
-          "img": "assets/images/trabucco-filo-xps-surf-cast-025-300m.jpg",
-          "rating": 4
-        },
-        {
-          "nome": "lineaeffe superior cast",
-          "codice": "03",
-          "prezzo": "95.9€",
-          "img": "assets/images/lineaeffe-superior-cast.jpg",
-          "rating": 5
-        }
+        4,
+        5,
+        6
       ],
       "sottocategorie": [
         {
@@ -236,7 +220,11 @@
     {
       "id": "SUBACQUEA",
       "nome": "SUBACQUEA",
-      "prodotti": [],
+      "prodotti": [
+        1,
+        4,
+        6
+      ],
       "sottocategorie": [
         {
           "nome": "Mulinelli",
@@ -297,7 +285,7 @@
           "img": "assets/images/1mulinello_abu_garcia_revo_ike_mike_iaconelli_1_1920x1920.png",
           "prezzo": 190.9,
           "prezzoOriginale": 209.9,
-          "rating":5,
+          "rating": 5,
           "caratteristiche": [
             "Cuscinetti: 9+1 rulli",
             "Rapporto: 6.2:1",
@@ -314,7 +302,7 @@
           "img": "assets/images/2mulinello_abu_garcia_revo_ike_mike_iaconelli_2_1920x1920.png",
           "prezzo": 180.9,
           "prezzoOriginale": 220.9,
-          "rating":5,
+          "rating": 5,
           "caratteristiche": [
             "Cuscinetti: 9+1 rulli",
             "Rapporto: 6.2:1",
@@ -355,6 +343,30 @@
       "nome": "Daiwa Ballistic LT",
       "codice": "3",
       "prezzo": "250€"
+    },
+    {
+      "id": 4,
+      "nome": "Mulinello Abu Garcia Revo IKE",
+      "codice": "01",
+      "prezzo": "190€",
+      "img": "assets/images/Mulinello Abu Garcia Revo IKE (Mike Iaconelli).png",
+      "rating": ""
+    },
+    {
+      "id": 5,
+      "nome": "trabucco filo xps surf cast 025 300m",
+      "codice": "02",
+      "prezzo": "22.5€",
+      "img": "assets/images/trabucco-filo-xps-surf-cast-025-300m.jpg",
+      "rating": 4
+    },
+    {
+      "id": 6,
+      "nome": "lineaeffe superior cast",
+      "codice": "03",
+      "prezzo": "95.9€",
+      "img": "assets/images/lineaeffe-superior-cast.jpg",
+      "rating": 5
     }
   ],
   "login": {
@@ -486,6 +498,42 @@
       "cognome": "perrone",
       "email": "davide@davi",
       "password": "davide"
+    },
+    {
+      "id": "t9PmS7Q",
+      "nome": "",
+      "cognome": "",
+      "email": "",
+      "password": ""
+    }
+  ],
+  "recensioni": [
+    {
+      "id": 1,
+      "id_user": "gppdtkZ",
+      "id_prodotto": 1,
+      "recensione": "vjudtvteccezionale del prodotto. Sono rimasto molto soddisfatto del mio acquisto.",
+      "nuovaProprieta": "NuovoValore"
+    },
+    {
+      "id": 2,
+      "id_user": "GwLp3EE",
+      "id_prodotto": 2,
+      "recensione": "Ho trovato questo prodotto molto deludente. La qualità non è all'altezza delle aspettative."
+    },
+    {
+      "id": 3,
+      "id_user": "YL5Kn_c",
+      "id_prodotto": 3,
+      "recensione": "Il prodotto XYZ è fantastico! Non posso fare a meno di raccomandarlo a tutti."
+    },
+    {
+      "recensione": "bn cvbc",
+      "id": 4
+    },
+    {
+      "recensione": "xdvzsvraa",
+      "id": 5
     }
   ]
 }

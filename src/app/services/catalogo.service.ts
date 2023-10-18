@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { categoria, prodotti, sottocategorie } from '../interfaces/categorie';
-import { BehaviorSubject, Observable, map } from 'rxjs';
+import { BehaviorSubject, Observable, forkJoin, map, of, switchMap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CatalogoService {
+
   refresh = new BehaviorSubject<string>("");
 
   constructor(private http: HttpClient) { }
@@ -14,6 +15,22 @@ export class CatalogoService {
   getDatiCatalogo(): Observable<categoria[]> {
     const url = '/api/categoria';
     return this.http.get<categoria[]>(url);
+  }
+
+  completaProdotti(prodottiCategoria: (number | prodotti)[]): Observable<any[]> {
+    return of(prodottiCategoria).pipe(
+      switchMap((prods: any[]) => {
+
+        const arrOsservables = prods.map(prod => {
+          if (typeof prod == "number") {
+            return this.http.get('/api/product/' + prod);
+          }
+          return of(prod);
+        });
+
+        return forkJoin(arrOsservables);
+      })
+    );
   }
 
   getAllCategorie(): Observable<categoria[]> {

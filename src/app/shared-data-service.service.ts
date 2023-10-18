@@ -10,6 +10,8 @@ export class SharedDataService {
   private subtotale: number = 0;
   updateCarrelloSubject = new BehaviorSubject<any[]>([]);
   carrello: Array<any> = [];
+  updateSubtotaleObservable: any;
+  updateSubtotalObservable: any;
 
   constructor() { }
 
