@@ -74,8 +74,8 @@ import { SurfcastingComponent } from './pages/surfcasting/surfcasting.component'
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

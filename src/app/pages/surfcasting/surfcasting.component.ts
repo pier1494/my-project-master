@@ -12,7 +12,12 @@ import { ModificarecensioniService } from 'src/app/services/modificarecensioni.s
 })
 export class SurfcastingComponent {
   recensioniArray: recensioni[] = [];
+
+  /** flag di verifica
+   * Proprietà utilizzata per verificare la recensione che è in modifica
+   */
   recensioneInModifica: any;
+
   inputVisibile = false;
   recensioneNew: recensioni = { recensione: '' } as recensioni;
   data: any;
@@ -25,27 +30,13 @@ export class SurfcastingComponent {
   ) { }
 
   ngOnInit(): void {
-    this.caricaRecensioni();
+ this.aggiornaComponente()
   }
 
-  caricaRecensioni() {
-    this.http.get<Array<recensioni>>('/api/recensioni')
-      .pipe(
-        map((recensioni: recensioni[]) => {
-          return recensioni.map(recensione => {
-            return {
-              ...recensione,
-              nuovaProprieta: 'NuovoValore'
-            };
-          });
-        })
-      )
-      .subscribe(res => {
-        this.recensioniArray = res;
-        console.log(res);
-      });
-  }
-
+  /**
+   * 
+   * @param recensione recensione in modifica
+   */
   avviaModifica(recensione: any) {
     this.recensioneInModifica = recensione;
   }
@@ -58,21 +49,24 @@ export class SurfcastingComponent {
     } else {
       console.error('Recensione non trovata per l\'aggiornamento.');
     }
-    if (recensione.id) {
-      this.http.put('/api/recensioni/' + recensione.id, recensione).subscribe((res) => {
-        console.log("AGGIORNAMENTO DB", res);
-      })
-    } else {
-      this.http.post('/api/recensioni/', recensione).subscribe((res) => {
+    this.modificarecensioniService.salvaRecensione(recensione).subscribe((res) => {
+      if (recensione.id) {
+        console.log("AGGIORNAMENTO RECENSIONE AL DB", res);
+      } else {
         console.log("AGGIUNTA RECENSIONE AL DB", res);
         this.recensioneNew.recensione = '';
-        this.aggiornaComponente()
-      })
-    }
+      }      
+      this.aggiornaComponente()
+    });
+
   }
 
   aggiornaComponente() {
-    this.caricaRecensioni();
+    this.modificarecensioniService.caricaRecensioni()
+   .subscribe(res => {
+        this.recensioniArray = res;
+        console.log(res);
+      }); 
   }
 
   mostraInput(): void {

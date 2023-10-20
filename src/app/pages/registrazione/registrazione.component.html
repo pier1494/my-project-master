@@ -16,12 +16,12 @@
                                             <fa-icon [icon]="faUser" class="icon   mx-2"></fa-icon>
                                         </div>
                                         <div class="form-outline flex-fill mb-0">
-                                            <input type="text" name="dati" [formControl]="datiinput" required id="form3Example1c"/>
+                                            <input type="text" (keyup)="changehandler($event)" name="dati" [formControl]="datiinput" required id="form3Example1c"/>
                                             <label class="form-label" for="form3Example1c">Nome</label>
-                                            <input type="text"  name="nome" [(ngModel)]="nome" required id="form3Example1c"
+                                            <input type="text" #input name="nome" [(ngModel)]="nome" required id="form3Example1c"
                                             class="form-control" />
                                         <label class="form-label" for="form3Example1c">Nome</label>    
-                                            <input type="text" name="cognome" [(ngModel)]="cognome" required id="form3Example1c"
+                                            <input type="text" [formControl]="cognom"  name="cognome" [(ngModel)]="cognome" required id="form3Example1c"
                                                 class="form-control" />
                                             <label class="form-label" for="form3Example1c">Cognome</label>
 
